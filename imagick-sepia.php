@@ -9,11 +9,13 @@ Author URI: https://www.getsource.net
 */
 
 function image_editors_add_imagick_sepia( $editors ) {
-	if( ! class_exists('WP_Image_Editor_Imagick_Sepia') )
+	$new_editor = 'WP_Image_Editor_Imagick_Sepia';
+
+	if( ! class_exists( $new_editor ) )
 		include_once 'editors/imagick-sepia.php';
 
-	if( ! in_array( 'WP_Image_Editor_Imagick_Sepia', $editors ) )
-		array_unshift( $editors, 'WP_Image_Editor_Imagick_Sepia' );
+	if( ! in_array( $new_editor, $editors ) )
+		array_unshift( $editors, $new_editor );
 
 	return $editors;
 }
