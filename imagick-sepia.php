@@ -8,15 +8,14 @@ Version: 1.0
 Author URI: https://www.getsource.net
 */
 
-function image_editors_add_imagick_sepia( $editors ) {
-	$new_editor = 'WP_Image_Editor_Imagick_Sepia';
-
-	if( ! class_exists( $new_editor ) )
-		include_once 'editors/imagick-sepia.php';
-
-	if( ! in_array( $new_editor, $editors ) )
-		array_unshift( $editors, $new_editor );
+/**
+ * Add Sepia Editor to beginning of search list.
+ * Unnecessesary if specifically requesting sepia() method, but safer overall.
+ */
+function gs_add_imagick_sepia( $editors ) {
+	include_once 'editors/imagick-sepia.php';
+	array_unshift( $editors, 'GS_Imagick_Sepia_Editor' );
 
 	return $editors;
 }
-add_filter( 'wp_image_editors', 'image_editors_add_imagick_sepia' );
+add_filter( 'wp_image_editors', 'gs_add_imagick_sepia' );

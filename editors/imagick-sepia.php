@@ -5,7 +5,7 @@
  * @since 1.0
  * @uses WP_Image_Editor Extends class
  */
-class WP_Image_Editor_Imagick_Sepia extends WP_Image_Editor_Imagick {
+class GS_Imagick_Sepia_Editor extends WP_Image_Editor_Imagick {
 
 	/**
 	 * Filters current in-memory image with Sepia
