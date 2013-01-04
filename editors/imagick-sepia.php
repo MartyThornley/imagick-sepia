@@ -10,7 +10,7 @@ class WP_Image_Editor_Imagick_Sepia extends WP_Image_Editor_Imagick {
 	/**
 	 * Filters current in-memory image with Sepia
 	 *
-	 * @since 3.5.0
+	 * @since 1.0
 	 * @access public
 	 *
 	 * @param int $amount
