@@ -1,5 +1,5 @@
 === Imagick Sepia ===
-Contributors: DH-Shredder
+Contributors: DH-Shredder, markoheijnen
 Tags: image, imagick, sepia
 Requires at least: 3.5
 Tested up to: 3.5
@@ -13,7 +13,7 @@ This plugin adds the sepia() function to to the Imagick editor within WordPress.
 
 == Installation ==
 
-1. Upload the folder `gmagick` to the `/wp-content/plugins/` directory
+1. Upload the folder `imagick-sepia` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 
 == Changelog ==
